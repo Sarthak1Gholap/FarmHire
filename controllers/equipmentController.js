@@ -67,4 +67,9 @@ const deleteEquipment = async (req, res) => {
   }
 };
 
-module.exports = { getAllEquipment, addEquipment, deleteEquipment, getEquipmentById };
+const hireEquipment = (req, res) => {
+  res.status(200).json({ message: 'Equipment hired successfully' });
+};
+
+
+module.exports = { getAllEquipment, addEquipment, deleteEquipment, getEquipmentById, hireEquipment };
